@@ -1,29 +1,45 @@
-@font-face {
-    font-family: Futura-Bold;
-    src: url('./font/Futura Bold.ttf');
+:root{
+    --font-heading: 40px;
+    --font-subtitle: 24px;
+    --font-body-copy: 18px;
+    --line-height: 135.8%;
+    --weight-bold: 600;
 }
 
 @font-face {
-    font-family: Futura-Book;
-    src: url('./font/Futura Book.ttf');
+    font-family: "Futura Bk";
+    src: url("./font/hinted-Futura-Book.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Futura";
+    src: url("./font/hinted-Futura-Bold.woff");
+    font-weight: bold; 
+    font-style: normal;
 }
 
-@font-face {
-    font-family: Futura-Round;
-    src: url('./font/Futura Round.ttf');
+.heading {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: var(--weight-bold);
+    font-size: var(--font-heading);
+    line-height: var(--line-height);
+    letter-spacing: 0.25em;
 }
 
-@font-face {
-    font-family: Futura-Std-Book;
-    src: url('./font/Futura Std Book.ttf');
+.subtitle{
+    font-family: Futura Bk;
+    font-weight: var(--weight-bold);
+    font-size: var(--font-subtitle);
+    line-height: var(--line-height);
+    letter-spacing: 0.17em;
+    color: #444;
 }
 
-@font-face {
-    font-family: Futura-Std-Heavy;
-    src: url('./font/Futura Std Heavy.ttf');
-}
-
-@font-face {
-    font-family: Futura-Thin;
-    src: url('./font/Futura Thin.ttf');
+.body-copy {
+    font-family: Futura Bk;
+    font-size: var(--font-body-copy);
+    line-height: var(--line-height);
+    letter-spacing: 0.2em;
 }
