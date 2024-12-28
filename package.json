@@ -1,12 +1,12 @@
 {
-  "name": "portfolio-sriveer",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+    "name": "portfolio-sriveer",
+    "source": "src/index.html",
+    "browserslist": "> 0.5%, last 2 versions, not dead",
+    "scripts": {
+        "start": "parcel",
+        "build": "parcel build"   
+    },
+    "devDependencies": {
+        "parcel": "^2.13.3"
+    }
 }
